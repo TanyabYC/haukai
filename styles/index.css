@@ -1,0 +1,17 @@
+main {
+    padding-bottom: 5em;
+}
+
+.restaurantphoto {
+    max-width: 100%;
+    height: auto;
+}
+
+.about {
+    margin-bottom: -1.75em;
+}
+
+    .about p {
+        line-height: 2.5em;
+        text-align: justify;
+    }

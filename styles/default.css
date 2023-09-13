@@ -1,0 +1,289 @@
+/* Include padding and borders within width and height of all elements */
+* {
+    box-sizing: border-box;
+}
+
+/* Prepare the body style */
+body {
+    max-width: 100%;
+    margin: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+	font-family: 'Montserrat', Verdana, sans-serif;
+    color: #78624c;
+}
+
+/* Style all links with Anchor Pseudo-classes */
+a:link {
+    text-decoration: none;
+    color: #154242;
+    font-weight: bold;
+}
+a:hover {
+    opacity: 0.5;
+    text-decoration: underline;
+}
+a:visited {
+	color: initial;
+}
+
+    /* Style the top navigation menu bar */
+    .topnav {
+        width: 100%;
+        display: block;
+        float: none;
+        position: relative;
+    }
+
+        .tophome {
+            display: block;
+            float: left;
+            width: 85%;
+        }
+
+            .tophome img {
+                display: block;
+                float: left;
+                max-width: 100%;
+            }
+
+        .topnav img#menubutton {
+            display: block;
+            float: right;
+            max-width: 15%;
+            width: 15%;
+            height: auto;
+
+            /* vertically align burger menu image to the center */
+            position: absolute;
+            transform: translate(565%, 50%);
+        }
+
+        .menu {
+            display: none;
+        }
+
+        .showmenu {
+            display: block;
+            float: left;
+            width: 100%;
+            border-top: 2px solid #154242;
+        }
+
+        /* Remove default spacing within unordered lists (ul) */
+        .footerlinks ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Change default spacing with menu unordered list */
+        .menu {
+            margin: 0;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        /* Style spacing above and below lists */
+        .topnav ul li, .footerlinks li {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        /* Remove bullet point markers of lists */
+        li {
+            list-style-type: none;
+        }
+
+/* Clearfix after header element */
+header::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the main body border */
+main {
+    border-bottom: 2px solid #154242;
+}
+
+    /* Style all level one headings */
+    h1 {
+        text-align: center;
+        margin: 0;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        border-top: 2px solid #154242;
+    }
+
+/* Style spacing above footer */
+footer {    
+    padding-top: 40px;
+}
+
+    /* Style the opening hours section */
+    .openinghours {
+        padding-bottom: 40px;
+        border-bottom: 2px solid #154242;
+    }
+
+    /* Style footer sections */
+    .contactinfo, .openinghours, .links, .socials  {    
+        margin-bottom: 3em;
+    }
+
+        /* Style the phone icon */
+        .contactinfo img {
+            vertical-align: middle;
+            height: 2em;
+        }
+
+    /* Style the footer links */
+    .links {
+        text-align: center;
+    }
+
+    /* Style the footer social media icon containers */
+    .socials p {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 40px;
+        justify-content: center;
+    }
+
+        /* Style the footer social media icons */
+        .socials a img {
+            max-width: 3.5em;
+            height: 3.5em;
+        }
+
+    /* Style the footer copyright info */
+    .copyright {
+        margin: 0;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+
+/* For desktop screens */
+@media only screen and (min-width: 768px)  {
+
+    /* Style the header for landscape view */
+    header {
+        height: 150px;
+        position: relative;
+    }
+
+        .topnav {
+            display: block;
+            float: left;
+            width: 100%;
+
+            /* vertically align to the center */
+            position: relative;
+            top: 50%;
+            transform: translate(0, -50%);
+        }
+            
+            .tophome {
+                display: block;
+                float: left;
+                width: 40%;
+
+                /* vertically align to the center */
+                position: absolute;
+                top: 50%;
+                transform: translate(0, -50%);
+            }
+                
+                .tophome img {
+                    max-height: 150px;
+                }
+
+            .topnav img#menubutton {
+                display: none;
+            }
+
+            .menu {
+                display: block;
+                float: right;
+                width: 60%;
+
+                /* vertically align to the center */
+                position: absolute;
+                top: 50%;
+                transform: translate(0, -50%);
+
+                /* horisontally align to center */
+                left: 40%;
+            }
+
+            .topnav ul li {
+                display: block;
+                float: left;
+                padding-right: 20px;
+                padding-left: 20px;
+            }
+
+    /* Style the footer for landscape view */
+    footer {
+        display: flex;
+        flex-flow: row wrap;
+        align-content: space-evenly;
+    }
+
+        .links, .contactinfo, .openinghours, .socials {
+            display: block;
+            float: left;
+            width: 25%;
+        }
+
+        .footerlinks li {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .footerlinks li:last-child {
+            padding-bottom: 0;
+        }
+
+        .links {
+            order: 1;
+            padding-top: 0.75em;
+            text-align: left;
+        }
+
+        .contactinfo {
+            order: 2;
+            margin-bottom: 0;
+        }
+
+        .openinghours {
+            order: 3;
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border: none;
+        }
+
+        .socials {
+            order: 4;
+            text-align: right;
+        }
+
+        .socials p {
+            gap: 20px;
+            justify-content: right;
+        }
+
+        .socials a img {
+            max-width: 100%;
+        }
+
+        .copyright {
+            order: 5;
+            display: block;
+            float: left;
+            width: 100%;
+            padding-top: 20px;
+            padding-bottom: 40px;
+        }    
+}

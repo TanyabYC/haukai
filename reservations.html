@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!--Page language set as English New Zealand to attract New Zealand customers
+    Useful for search engines, screen readers and voice assistants to correctly pronounce content -->
+<html lang="en-NZ">
+<head>
+    <!-- The set of characters and symbols used in the web page and required by the browser -->
+    <meta charset="UTF-8">
+
+    <!-- The browser should not scale content down. Necessary to make the website responsive on all devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Web page author -->
+    <meta name="author" content="Tanya Suzette Boshoff">
+
+    <!-- Web page description -->
+    <meta name="description" content="The Haukai Restaurant Reservations">
+
+    <!-- Define keywords required by search engines -->
+    <meta   name="keywords" 
+            content="Reserve a table at the Haukai Restaurant, 
+                    book a table online, 
+                    M&amacr;ori kai, 
+                    Bay of Islands restaurant, 
+                    ideal for local residents and tourists to visit the area, 
+                    M&amacr;ori and Pakeha kai food and drinks, 
+                    experience Te Ao M&amacr;ori, 
+                    blessing food with karakia, 
+                    M&amacr;ori culture experience">
+
+    <!-- Display a favicon image to the left of the page title in the browser tab -->
+    <!-- Generated with https://favicon.io/favicon-generator/ -->
+    <link rel="icon" type="image/x-icon" href="/images/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon//apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon//favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/default.css">
+    <link rel="stylesheet" href="styles/reservations.css">
+
+    <!-- Google font -->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    
+    <!-- Display the page title in the browser tab to describe the meaning of the page -->
+    <title>Reservations | The Haukai</title>
+</head>
+<body>
+
+    <!-- Page header -->
+    <header>
+        <!-- Page navigation -->
+        <nav class="topnav">
+            <a class="tophome" href="index.html" title="Our home page">
+                <img src="images/logo/logo_banner_1000x357.png" alt="The Haukai Restaurant logo">
+            </a>
+            <img id="menubutton" src="images/menu/menu_icon.svg" onclick="showMe()" alt="View navigation">
+            <ul id="menu" class="menu">
+                <li><a class="menuhome" href="index.html" title="Our home page">Home</a></li>
+                <li><a href="menu.html" title="Our menu">Menu</a></li>
+                <li><a href="reservations.html" title="Make a reservation">Reservations</a></li>
+                <li><a href="hours.html" title="Our opening hours">Hours</a></li>
+                <li><a href="contact.html" title="Contact us">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Main page section -->
+    <main>
+        <!-- Page heading -->
+        <h1>Reservations</h1>
+
+        <!-- Google form -->
+        <p>
+            <iframe class="googleform" 
+                    title="Book a table form"
+                    loading="eager" 
+                    name="googleform"
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSeWRVYfqLm3FfLAaTQry6KhNYe31a5dXhldpoh3UURly010RA/viewform?embedded=true">
+                Loading…
+            </iframe>
+        </p>        
+    </main>
+
+    <!-- Footer -->
+    <footer>
+
+        <!-- Contact information -->
+        <section class="contactinfo">
+            <h3>Contact</h3>
+            <p><img src="images/icons/phone_icon_48px.png" alt="Phone us"> 09 401 4019</p>
+        </section>
+
+        <!-- Opening hours -->
+        <section class="openinghours">
+            <h3>Opening Hours</h3>
+            <p>Wednesdays to Sundays</p>
+            <p>5:30pm till 9pm</p>
+        </section>
+
+        <!-- Links -->
+        <section class="links">
+            <nav class="footerlinks">
+                <ul>
+                    <li><a href="#" title="Our booking process">Booking process</a></li>
+                    <li><a href="#" title="Buy gift vouchers">Gift vouchers</a></li>
+                    <li><a href="#" title="Our privacy policy">Privacy Policy</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <!-- Social icons generated with https://iconfinder.com/ -->
+        <section class="socials">
+            <p>
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener">
+                    <img class="facebook_icon" src="/images/socials/facebook_icon.svg" alt="Facebook icon"  title="Our Facebook page">
+                </a>
+                <a href="https://twitter.com/" target="_blank" rel="noopener">
+                    <img class="twitter_icon" src="/images/socials/twitter_icon.svg" alt="Twitter icon"  title="Our Twitter page">
+                </a>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener">
+                    <img class="instagram_icon" src="/images/socials/instagram_icon.svg" alt="Instagram icon" title="Our Instagram page">
+                </a>
+                <a href="https://www.linkedin.com/" target="_blank" rel="noopener">
+                    <img class="linkedin_icon" src="/images/socials/linkedin_icon.svg" alt="LinkedIn icon" title="Our LinkedIn page">
+                </a>
+            </p>
+        </section>
+
+        <!-- Copyright information -->
+        <section class="copyright">
+            <p>&copy; 2023 The Haukai Restaurant</p>
+        </section>        
+    </footer>
+
+    <!-- Responsive menu class setting -->
+    <script src="js/main.js"></script>
+</body>
+</html>
