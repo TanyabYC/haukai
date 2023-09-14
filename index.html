@@ -74,9 +74,10 @@
         <!-- Restaurant image -->
         <figure class="restaurantimg_container">
             <picture>
+                <source media="(max-width: 599px)" srcset="images/mobile/restaurant_photo_600x400px.jpg">
+                <source media="(max-width: 767px)" srcset="images/tablet/restaurant_photo_768x512px.jpg">
                 <source media="(min-width: 768px)" srcset="images/desktop/restaurant_photo_1920x1280px.jpg">
-                <source media="(min-width: 600px)" srcset="images/tablet/restaurant_photo_768x512px.jpg">
-                <img class="restaurantphoto" src="images/mobile/restaurant_photo_600x400px.jpg" alt="The Haukai Restaurant photo">
+                <img class="restaurantphoto" src="images/mobile/restaurant_photo_600x400px.jpg" alt="The Haukai Restaurant seating area">
             </picture>
         </figure>
 
