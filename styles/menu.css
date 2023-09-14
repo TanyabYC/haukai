@@ -1,0 +1,157 @@
+/* Style the first three sections of the main page area */
+.appetizers, .mains, .dessert {
+    text-align: center;
+    padding-bottom: 3em;
+}
+
+    /* Remove the indent to center food items */
+    .appetizers ul, .mains ul, .dessert ul {
+        padding-left: 0;
+    }
+        /* Style food items */
+        .appetizers ul li ul, .mains ul li ul, .dessert ul li ul {
+            line-height: 1.75em;
+        }
+            /* Style the first food item */
+            .appetizers ul li ul li:nth-child(1), .mains ul li ul li:nth-child(1), .dessert ul li ul li:nth-child(1) {
+                margin-top: 4em;
+            }
+            /* Style food photo height */
+            .itemphoto {
+                height: 100px;
+            }            
+            /* Add spacing after name of each meal */
+            .appetizers ul li ul li:nth-child(2), .mains ul li ul li:nth-child(2), .dessert ul li ul li:nth-child(2) {
+                color: #154242;
+                font-weight: 500;
+            }
+                /* Style price of a meal */
+                .appetizers strong, .mains strong, .dessert strong, .beverages strong {
+                    color: rgba(238, 16, 16, 0.603);
+                }
+
+    /* Style the heading for the beverages section */
+    .beverages h2 {
+        text-align: center;
+    }
+
+    /* Red wine section */
+    .red {        
+        margin-top: 3em;
+    }
+
+    /* Style beverage types/sections */
+    .red, .white, .beerandcider, .nonalcoholic {
+        margin-bottom: 3em;
+    }
+        /* Style the image beverage types/sections */
+        .beveragephoto {
+            height: 100px;            
+            display: block;
+            float: none;
+        }
+        /* Style the header containers beverage types/sections */
+        .red header, .white header, .beerandcider header, .nonalcoholic header {
+            height: auto;
+        }
+
+        /* Style item and price headings for beverage sections */
+        .itemheading {
+            float: left;
+            width: 75%;
+            margin: 0;
+            padding-top: 0.5em;
+            padding-bottom: 0.5em;
+            color: #154242;
+            font-weight: 500;            
+            line-height: 1.5;
+        }
+        .priceheading {
+            float: left;
+            width: 20%;
+            margin: 0 0 0 5%;
+            padding: 0.5em 0 0.5em 0;
+            line-height: 1.5em;
+        }
+    
+        /* Style the unordered list of each beverage section */
+        .red ul, .white ul, .beerandcider ul, .nonalcoholic ul {
+            padding-right: 0;
+            padding-left: 0;
+            margin: 0;
+            overflow: hidden;
+        }    
+            /* Style the non-alcoholic list */
+            .nonalcoholic li {
+                float: left;
+                width: 100%;
+                margin-bottom: 2em;
+            }
+            .nonalcoholic li:first-child {
+                margin-top: 2em;
+            }
+            .nonalcoholic li:last-child {
+                margin-bottom: 0;
+            }
+
+                /* Prepare image containers within the non-alcoholic list */
+                .na_img_container {
+                    display: block;
+                    float: left;
+                    width: 75%;
+                    height: 100px;
+                    margin: 0;
+                }
+                    /* Style images within non-alcoholic image container */
+                    .na_img_container img {
+                        height: 100px;
+                        width: auto;
+                    }
+
+                /* Item styling */
+                .item, .na_item {
+                    float: left;
+                    width: 75%;
+                    margin: 0;
+                    padding-top: 0.5em;
+                    padding-bottom: 0.5em;
+                    line-height: 1.5em;
+                }
+                /* Price styling */
+                .price, .na_price {
+                    float: left;
+                    width: 20%;
+                    margin: 0 0 0 5%;                    
+                    padding: 0.5em 0 0.5em 0;
+                    line-height: 1.5em;
+                }
+
+/* Clearfix float and margin after beverages section */
+.beverages::after {
+    content: "";
+    display: table;
+    clear: both;
+    margin-bottom: 2em;
+}
+
+/* For tablet screens */
+@media only screen and (min-width: 600px) {
+
+    /* Style item and price headings and content for beverage sections */
+    .itemheading, .item, .na_item {
+        width: 80%;
+    }
+        .priceheading, .price, .na_price {
+            width: 15%; /* includes margin left of 5% from mobile setting */
+        }
+}
+
+/* For desktop screens */
+@media only screen and (min-width: 768px)  {
+
+    /* Center the beverage section */
+    .beverages {
+        padding-left: 15%;
+        padding-right: 10%; /* includes 5% margin of from price heading and price setting */
+    }
+}
