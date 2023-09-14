@@ -72,11 +72,11 @@
         <h1>Our Restaurant</h1>
         
         <!-- Restaurant image -->
-        <figure class="restaurantimg_container">
-            <picture>
-                <source media="(max-width: 599px)" srcset="images/mobile/restaurant_photo_600x400px.jpg">
-                <source media="(max-width: 767px)" srcset="images/tablet/restaurant_photo_768x512px.jpg">
-                <source media="(min-width: 768px)" srcset="images/desktop/restaurant_photo_1920x1280px.jpg">
+        <figure>
+            <picture class="restaurantimg_container">
+                <source media="(max-width: 599px)" srcset="images/mobile/restaurant_photo_600x400px.jpg 600w" sizes="600w">
+                <source media="(max-width: 767px)" srcset="images/tablet/restaurant_photo_768x512px.jpg 768w" sizes="768w">
+                <source media="(min-width: 768px)" srcset="images/desktop/restaurant_photo_1920x1280px.jpg 1920w" sizes="1920w">
                 <img class="restaurantphoto" src="images/mobile/restaurant_photo_600x400px.jpg" alt="The Haukai Restaurant seating area">
             </picture>
         </figure>
