@@ -12,7 +12,7 @@ h2 {
     }
 
 .googlemap_container {
-    margin-bottom: 5em;
+    margin-bottom: 6.25em;
 }
 
     .googlemap {
@@ -44,6 +44,7 @@ h2 {
         float: left;
         width: 70%;
         height: 490px;
+        margin-bottom: 6.5em;
     }
 
         /* Align the google map */

@@ -52,7 +52,12 @@
         <!-- Page navigation -->
         <nav class="topnav">
             <a class="tophome" href="index.html" title="Our home page">
-                <img src="images/logo/logo_banner_1000x357.png" alt="The Haukai Restaurant logo">
+                <picture>
+                    <source media="(max-width: 599px)" srcset="images/logo/logo_banner_600x214.png 600w" sizes="600px">
+                    <source media="(max-width: 767px)" srcset="images/logo/logo_banner_768x274.png 768w" sizes="768px">
+                    <source media="(min-width: 768px)" srcset="images/logo/logo_banner_600x214.png 600w" sizes="600px">
+                    <img src="images/logo/logo_banner_600x214.png" width="600" height="214" alt="The Haukai Restaurant logo">
+                </picture>
             </a>
             <img id="menubutton" src="images/menu/menu_icon.svg" onclick="showMe()" alt="View navigation">
             <ul id="menu" class="menu">
@@ -81,7 +86,8 @@
                 <iframe class="googleagenda"
                     title="Restaurant opening hours"
                     loading="eager"
-                    src="https://calendar.google.com/calendar/embed?height=355&wkst=2&bgcolor=%238bc1c7&ctz=Pacific%2FAuckland&mode=AGENDA&showNav=0&showTitle=0&showPrint=0&showTabs=0&showCalendars=0&showTz=1&showDate=0&src=YWJhY2I0MGVjNmNiNmZhNTBjYThlZjlmZjJiMWUwMWUwN2IxMTNlNzZhODk3MDA3OGU1Y2ZlZjA4YzM2Mjg2NEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4ubmV3X3plYWxhbmQjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%238bc1c7&color=%23449d94">
+                    src="https://calendar.google.com/calendar/embed?height=355&wkst=2&bgcolor=%23ffffff&ctz=Pacific%2FAuckland&showTitle=0&showNav=0&mode=AGENDA&hl=en_GB&showCalendars=0&showTabs=0&showPrint=0&showDate=0&src=YWJhY2I0MGVjNmNiNmZhNTBjYThlZjlmZjJiMWUwMWUwN2IxMTNlNzZhODk3MDA3OGU1Y2ZlZjA4YzM2Mjg2NEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4ubmV3X3plYWxhbmQjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%238bc1c7&color=%23449d94" 
+                    width="800" height="355">
                 </iframe>
             </p>
         </section>
@@ -96,7 +102,8 @@
                 <iframe class="googlecalendar" 
                         title="Restaurant calendar"
                         loading="eager" 
-                        src="https://calendar.google.com/calendar/embed?height=1100&wkst=2&bgcolor=%238bc1c7&ctz=Pacific%2FAuckland&showTitle=0&showDate=0&showPrint=0&showTabs=0&showCalendars=0&mode=WEEK&hl=en_GB&src=YWJhY2I0MGVjNmNiNmZhNTBjYThlZjlmZjJiMWUwMWUwN2IxMTNlNzZhODk3MDA3OGU1Y2ZlZjA4YzM2Mjg2NEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4ubmV3X3plYWxhbmQjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%238bc1c7&color=%23449d94">
+                        src="https://calendar.google.com/calendar/embed?height=1100&wkst=2&bgcolor=%23ffffff&ctz=Pacific%2FAuckland&showTitle=0&showNav=1&mode=WEEK&hl=en_GB&showCalendars=0&showTabs=0&showPrint=0&showDate=1&src=YWJhY2I0MGVjNmNiNmZhNTBjYThlZjlmZjJiMWUwMWUwN2IxMTNlNzZhODk3MDA3OGU1Y2ZlZjA4YzM2Mjg2NEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4ubmV3X3plYWxhbmQjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%238bc1c7&color=%23449d94"
+                        width="800" height="1100">
                 </iframe>
             </p>
         </section>
@@ -108,7 +115,7 @@
         <!-- Contact information -->
         <section class="contactinfo">
             <h3>Contact</h3>
-            <p><img src="images/icons/phone_icon_48px.png" alt="Phone us"> 09 401 4019</p>
+            <p><img src="images/icons/phone_icon_48px.png" width="48" height="48" alt="Phone us"> 09 401 4019</p>
         </section>
 
         <!-- Opening hours -->
@@ -130,16 +137,19 @@
         <!-- Social icons generated with https://iconfinder.com/ -->
         <p class="socials">
             <a href="https://www.facebook.com/" target="_blank" rel="noopener">
-                <img class="facebook_icon" src="images/socials/facebook_icon.svg" alt="Facebook icon"  title="Our Facebook page">
+                <img class="facebook_icon" src="images/socials/facebook_icon.svg" width="112" height="112"                     alt="Facebook icon"  title="Our Facebook page">
             </a>
             <a href="https://twitter.com/" target="_blank" rel="noopener">
-                <img class="twitter_icon" src="images/socials/twitter_icon.svg" alt="Twitter icon"  title="Our Twitter page">
+                <img class="twitter_icon" src="images/socials/twitter_icon.svg" width="512" height="512"
+                    alt="Twitter icon"  title="Our Twitter page">
             </a>
             <a href="https://www.instagram.com/" target="_blank" rel="noopener">
-                <img class="instagram_icon" src="images/socials/instagram_icon.svg" alt="Instagram icon" title="Our Instagram page">
+                <img class="instagram_icon" src="images/socials/instagram_icon.svg" width="512" height="512"
+                    alt="Instagram icon" title="Our Instagram page">
             </a>
             <a href="https://www.linkedin.com/" target="_blank" rel="noopener">
-                <img class="linkedin_icon" src="images/socials/linkedin_icon.svg" alt="LinkedIn icon" title="Our LinkedIn page">
+                <img class="linkedin_icon" src="images/socials/linkedin_icon.svg" width="64" height="64"
+                    alt="LinkedIn icon" title="Our LinkedIn page">
             </a>
         </p>
 

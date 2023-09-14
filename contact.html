@@ -52,7 +52,12 @@
         <!-- Page navigation -->
         <nav class="topnav">
             <a class="tophome" href="index.html" title="Our home page">
-                <img src="images/logo/logo_banner_1000x357.png" alt="The Haukai Restaurant logo">
+                <picture>
+                    <source media="(max-width: 599px)" srcset="images/logo/logo_banner_600x214.png 600w" sizes="600px">
+                    <source media="(max-width: 767px)" srcset="images/logo/logo_banner_768x274.png 768w" sizes="768px">
+                    <source media="(min-width: 768px)" srcset="images/logo/logo_banner_600x214.png 600w" sizes="600px">
+                    <img src="images/logo/logo_banner_600x214.png" width="600" height="214" alt="The Haukai Restaurant logo">
+                </picture>
             </a>
             <img id="menubutton" src="images/menu/menu_icon.svg" onclick="showMe()" alt="View navigation">
             <ul id="menu" class="menu">
@@ -84,12 +89,13 @@
         <!-- Map section -->
         <p class="googlemap_container">
             <!-- Google map -->
-                <iframe class="googlemap"
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d814.7720667853994!2d173.9488345!3d-35.2291727!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0bb76f05800a6d%3A0x912328fde4819391!2sHaukai%20Restaurant!5e0!3m2!1sen!2snz!4v1694418638231!5m2!1sen!2snz" 
-                    allowfullscreen="" 
-                    loading="eager" 
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
+            <iframe class="googlemap"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d814.7720667853994!2d173.9488345!3d-35.2291727!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0bb76f05800a6d%3A0x912328fde4819391!2sHaukai%20Restaurant!5e0!3m2!1sen!2snz!4v1694710460285!5m2!1sen!2snz" 
+                width="600" height="450"
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
         </p>
     </main>
 
@@ -99,7 +105,7 @@
         <!-- Contact information -->
         <section class="contactinfo">
             <h3>Contact</h3>
-            <p><img src="images/icons/phone_icon_48px.png" alt="Phone us"> 09 401 4019</p>
+            <p><img src="images/icons/phone_icon_48px.png" width="48" height="48" alt="Phone us"> 09 401 4019</p>
         </section>
 
         <!-- Opening hours -->
@@ -121,16 +127,19 @@
         <!-- Social icons generated with https://iconfinder.com/ -->
         <p class="socials">
             <a href="https://www.facebook.com/" target="_blank" rel="noopener">
-                <img class="facebook_icon" src="images/socials/facebook_icon.svg" alt="Facebook icon"  title="Our Facebook page">
+                <img class="facebook_icon" src="images/socials/facebook_icon.svg" width="112" height="112"                     alt="Facebook icon"  title="Our Facebook page">
             </a>
             <a href="https://twitter.com/" target="_blank" rel="noopener">
-                <img class="twitter_icon" src="images/socials/twitter_icon.svg" alt="Twitter icon"  title="Our Twitter page">
+                <img class="twitter_icon" src="images/socials/twitter_icon.svg" width="512" height="512"
+                    alt="Twitter icon"  title="Our Twitter page">
             </a>
             <a href="https://www.instagram.com/" target="_blank" rel="noopener">
-                <img class="instagram_icon" src="images/socials/instagram_icon.svg" alt="Instagram icon" title="Our Instagram page">
+                <img class="instagram_icon" src="images/socials/instagram_icon.svg" width="512" height="512"
+                    alt="Instagram icon" title="Our Instagram page">
             </a>
             <a href="https://www.linkedin.com/" target="_blank" rel="noopener">
-                <img class="linkedin_icon" src="images/socials/linkedin_icon.svg" alt="LinkedIn icon" title="Our LinkedIn page">
+                <img class="linkedin_icon" src="images/socials/linkedin_icon.svg" width="64" height="64"
+                    alt="LinkedIn icon" title="Our LinkedIn page">
             </a>
         </p>
 
