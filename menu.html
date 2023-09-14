@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<!--Page language set as English New Zealand to attract New Zealand customers
+    Useful for search engines, screen readers and voice assistants to correctly pronounce content -->
+<html lang="en-NZ">
+<head>
+    <!-- The set of characters and symbols used in the web page and required by the browser -->
+    <meta charset="UTF-8">
+
+    <!-- The browser should not scale content down. Necessary to make the website responsive on all devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Web page author -->
+    <meta name="author" content="Tanya Suzette Boshoff">
+
+    <!-- Web page description -->
+    <meta name="description" content="The Haukai Restaurant Home Page">
+
+    <!-- Define keywords required by search engines -->
+    <meta   name="keywords" 
+            content="The Haukai Restaurant, 
+                    M&amacr;ori kai, 
+                    Bay of Islands restaurant, 
+                    ideal for local residents and tourists to visit the area,
+                    M&amacr;ori and Pakeha kai food and drinks,
+                    experience Te Ao M&amacr;ori,
+                    blessing food with karakia,
+                    M&amacr;ori culture experience,
+                    book a table online">
+
+    <!-- Display a favicon image to the left of the page title in the browser tab -->
+    <!-- Generated with https://favicon.io/favicon-generator/ -->
+    <link rel="icon" type="image/x-icon" href="images/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest/">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/default.css">
+    <link rel="stylesheet" href="styles/menu.css">
+    
+    <!-- Display the page title in the browser tab to describe the meaning of the page -->
+    <title>Home Page | The Haukai</title>
+</head>
+<body>
+    <!-- Page header -->
+    <header>
+        <!-- Page navigation -->
+        <nav class="topnav">
+            <a class="tophome" href="index.html" title="Our home page">
+                <picture>
+                    <source media="(max-width: 599px)" srcset="images/logo/logo_banner_600x214.png 600w" sizes="600px">
+                    <source media="(max-width: 767px)" srcset="images/logo/logo_banner_768x274.png 768w" sizes="768px">
+                    <source media="(min-width: 768px)" srcset="images/logo/logo_banner_600x214.png 600w" sizes="600px">
+                    <img src="images/logo/logo_banner_600x214.png" width="600" height="214" alt="The Haukai Restaurant logo">
+                </picture>
+            </a>
+            <img id="menubutton" src="images/menu/menu_icon.svg" onclick="showMe()" alt="View navigation">
+            <ul id="menu" class="menu">
+                <li><a class="menuhome" href="index.html" title="Our home page">Home</a></li>
+                <li><a href="menu.html" title="Our menu">Menu</a></li>
+                <li><a href="reservations.html" title="Make a reservation">Reservations</a></li>
+                <li><a href="hours.html" title="Our opening hours">Hours</a></li>
+                <li><a href="contact.html" title="Contact us">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Main page section -->
+    <main>
+        <!-- Page heading -->
+        <h1>Our Menu</h1>
+        
+        <!-- Appetizers section -->
+        <section class="appetizers">
+            <!-- Appetizers heading -->
+            <h2>APPETIZERS</h2>
+
+            <!-- List of appetizers list -->
+            <ul>
+                <li>
+                    <ul>
+                        <li><img class="itemphoto" src="images/menu/appetizers/rewena_bread_157x100.jpg" width="157" height="100" alt="Rewena bread"></li>
+                        <li>REWENA BREAD <strong>10</strong></li>
+                        <li>Traditional M&amacr;ori bread.</li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li><img class="itemphoto" src="images/menu/appetizers/paua_fritter_133x100.jpg" width="133" height="100" alt="Paua fritter"></li>
+                        <li>PAUA FRITTER <strong>16</strong></li>
+                        <li>Finely diced pieces of paua, served with a side salad and horopito dressing.</li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li><img class="itemphoto" src="images/menu/appetizers/raw_fish_150x100.jpg" width="150" height="100" alt="Raw fish"></li>
+                        <li>RAW FISH <strong>20</strong></li>
+                        <li>Finely diced pieces of paua, served with a side salad and horopito dressing.</li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li><img class="itemphoto" src="images/menu/appetizers/poached_salmon_150x100.jpg" width="150" height="100" alt="Poached salmon"></li>
+                        <li>POACHED SALMON <strong>22</strong></li>
+                        <li>Salmon poached in an orange and pistachio glaze, served with rewena bread.</li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li><img class="itemphoto" src="images/menu/appetizers/seafood_basket_133x100.jpg" width="133" height="100" alt="Seafood basket"></li>
+                        <li>SEAFOOD BASKET <strong>25</strong></li>
+                        <li>Crumbed mussels, salt and pepper squid, crumbed hoki bites and garlic prawns.</li>
+                    </ul>
+                </li>
+            </ul>            
+        </section>
+        
+        <!-- Main food section -->
+        <section class="mains">
+            <!-- Mains heading -->
+            <h2>MAIN</h2>
+
+            <!-- List of mains -->
+            <ul>
+                <li>
+                    <ul>
+                        <li><img class="itemphoto" src="images/menu/main/fish_of_the_day2_150x100.jpg" width="150" height="100" alt="Fish of the day"></li>
+                        <li>FISH OF THE DAY <strong>25</strong></li>
+                        <li>Beer-battered fish and kumara fries, served with a side salad and homemade tartare.</li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li><img class="itemphoto" src="images/menu/main/mussels_and_scallops_149x100.jpg" width="149" height="100" alt="Mussels and scallops"></li>
+                        <li>MUSSELS AND SCALLOPS <strong>25</strong></li>
+                        <li>Steamed mussel & scallop mousse, honey and soy broth.</li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li><img class="itemphoto" src="images/menu/main/seafood_chowder_150x100.jpg" width="150" height="100" alt="Seafood chowder"></li>
+                        <li>SEAFOOD CHOWDER <strong>30</strong></li>
+                        <li>Creamy chowder filled with tarakihi, prawn, hoki, scallops and mussels, served with flatbread.</li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li><img class="itemphoto" src="images/menu/main/pork_belly_117x100.jpg" width="117" height="100" alt="Pork belly"></li>
+                        <li>PORK BELLY <strong>30</strong></li>
+                        <li>Slow-cooked pork belly served on a bed of apple slaw with roasted kumara and crispy noodles.</li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li><img class="itemphoto" src="images/menu/main/lamb_steak3_118x100.jpg" width="118" height="100" alt="Lamb steak"></li>
+                        <li>LAMB STEAK <strong>33</strong></li>
+                        <li>New Zealand lamb coated in a kawakawa crumb, served with Dijon-mustard-glazed carrots, roasted butternut squash and mushroom jus.</li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li><img class="itemphoto" src="images/menu/main/venison_150x100.jpg" width="150" height="100" alt="Venison"></li>
+                        <li>VENISON  <strong>33</strong></li>
+                        <li>Venison crusted with Horopito, served with glazed plums, cabbage salad and red wine jus.</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        
+        <!-- Dessert section -->
+        <section class="dessert">
+            <!-- Dessert heading -->
+            <h2>DESSERT</h2>
+
+            <!-- List of desserts -->
+            <ul>
+                <li>
+                    <ul>
+                        <li><img class="itemphoto" src="images/menu/dessert/ice_cream2_100x100.jpg" width="100" height="100" alt="Kapiti ice cream"></li>
+                        <li>KAPITI ICE CREAM <strong>10</strong></li>
+                        <li>Check for daily specials.</li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li><img class="itemphoto" src="images/menu/dessert/steamed_pudding_150x100.jpg" width="150" height="100" alt="Steamed pudding"></li>
+                        <li>STEAMED PUDDING <strong>12</strong></li>
+                        <li>Golden-syrup-flavoured steamed pudding, served with vanilla ice cream.</li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li><img class="itemphoto" src="images/menu/dessert/mini_pavlova_149x100.jpg" width="149" height="100" alt="Mini pavlova"></li>
+                        <li>MINI PAVLOVA <strong>16</strong></li>
+                        <li>Mini pavlova, served with kawakawa and lemon-infused cream and fresh fruit.</li>
+                    </ul>
+                </li>
+                    
+                <li>
+                    <ul>
+                        <li><img class="itemphoto" src="images/menu/dessert/banoffee_pie_107x100.jpg" width="107" height="100" alt="Banoffee pie"></li>
+                        <li>BANOFFEE PIE <strong>16</strong></li>
+                        <li>Toffee, fresh bananas and fresh cream.</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        
+        <!-- Beverages section -->
+        <section class="beverages">
+            <h2>BEVERAGES</h2>
+
+            <!-- Red wine beverages -->
+            <section class="red">
+                <!-- Section image -->
+                <img class="beveragephoto" src="images/menu/beverages/red_wine_140x100.jpg" width="140" height="100" alt="Red wine icon">
+                
+                <!-- heading -->
+                <header>
+                    <h3 class="itemheading">RED</h3>
+                    <h3 class="priceheading"><strong>B &#47; G</strong></h3>
+                </header>
+
+                <!-- list -->
+                <ul>
+                    <li>
+                        <p class="item">Altitude Pinot Noir, 2010, Marlborough</p>
+                        <p class="price"><strong>64 &#47; 15</strong></p>
+                    </li>
+                    <li>
+                        <p class="item">Greystone Pinot Noir, 2012, Wairarapa</p>
+                        <p class="price"><strong>73 &#47; 17</strong></p>
+                    </li>
+                    <li>
+                        <p class="item">Terrace Edge, Syrah, 2012, Wairarapa</p>
+                        <p class="price"><strong>53 &#47; 13</strong></p>
+                    </li>
+                    <li>
+                        <p class="item">Altitude Syrah, 2010, Marlborough</p>
+                        <p class="price"><strong>64 &#47; 15</strong></p>
+                    </li>
+                    <li>
+                        <p class="item">Greystone Syrah, 2012, Wairarapa</p>
+                        <p class="price"><strong>73 &#47; 17</strong></p>
+                    </li>
+                    <li>
+                        <p class="item">Pegasus Bay Merlot, 2013, Waipara</p>
+                        <p class="price"><strong>65 &#47; 14</strong></p>
+                    </li>
+                    <li>
+                        <p class="item">Pegasus Bay Pinot Noir, 2013, Waipara</p>
+                        <p class="price"><strong>110</strong></p>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- White wine beverages -->
+            <section class="white">
+                <!-- Section image -->
+                <img class="beveragephoto" src="images/menu/beverages/white_wine_67x100.jpg" width="67" height="100" alt="White wine icon">
+
+                <!-- heading -->
+                <header>                    
+                    <h3 class="itemheading">WHITE</h3>
+                    <h3 class="priceheading"><strong>B &#47; G</strong></h3>
+                </header>
+
+                <!-- list -->
+                <ul>
+                    <li>
+                        <p class="item">Spade Oak Pinot Gris, 2011, Gisborne</p>
+                        <p class="price"><strong>40 &#47; 10</strong></p>
+                    </li>
+
+                    <li>
+                        <p class="item">Maude Pinot Gris, 2017, Otago</p>
+                        <p class="price"><strong>49.50 &#47; 11</strong></p>
+                    </li>
+                    
+                    <li>
+                        <p class="item">Charles Wiffen Chardonnay, 2013, Otago</p>
+                        <p class="price"><strong>48 &#47; 11</strong></p>
+                    </li>
+                    
+                    <li>
+                        <p class="item">Amisfield, Riesling, 2016, Otago</p>
+                        <p class="price"><strong>53 &#47; 12</strong></p>
+                    </li>
+                    
+                    <li>
+                        <p class="item">Lamont Riesling, 2010, Otago</p>
+                        <p class="price"><strong>57 &#47; 13</strong></p>
+                    </li>
+                    
+                    <li>
+                        <p class="item">Elephant Hill Viognier, 2013, Hawke&#39;s Bay</p>
+                        <p class="price"><strong>55 &#47; 12</strong></p>
+                    </li>
+                    
+                    <li>
+                        <p class="item">Folium Sauvignon Blanc, 2011, Marlborough</p>
+                        <p class="price"><strong>52 &#47; 11</strong></p>
+                    </li>
+                    
+                    <li>
+                        <p class="item">Billecart-Salmon Brut Reserve, France</p>
+                        <p class="price"><strong>120</strong></p>
+                    </li>                    
+                </ul>
+            </section>
+
+            <!-- Beer and cider beverages -->
+            <section class="beerandcider">
+                <!-- Section image -->
+                <img class="beveragephoto" src="images/menu/beverages/beer_and_cider_112x100.jpg" width="112" height="100" alt="Beer and cider icon">
+
+                <!-- heading -->
+                <header>
+                    <h3 class="itemheading">BEER AND CIDER</h3>
+                </header>
+            
+                <!-- list -->
+                <ul>
+                    <li>
+                        <p class="item">Garage project range</p>
+                        <p class="price"><strong>11</strong></p>
+                    </li>
+
+                    <li>
+                        <p class="item">Tuatara range</p>
+                        <p class="price"><strong>11</strong></p>
+                    </li>
+
+                    <li>
+                        <p class="item">Panhead range</p>
+                        <p class="price"><strong>10</strong></p>
+                    </li>
+
+                    <li>
+                        <p class="item">Coopers ale</p>
+                        <p class="price"><strong>10</strong></p>
+                    </li>
+
+                    <li>
+                        <p class="item">Heineken</p>
+                        <p class="price"><strong>11</strong></p>
+                    </li>
+
+                    <li>
+                        <p class="item">Moa cider</p>
+                    <p class="price"><strong>10</strong></p>
+                    </li>
+
+                    <li>
+                        <p class="item">Crooked cider</p>
+                        <p class="price"><strong>10</strong></p>
+                    </li>
+                </ul>
+            </section>   
+
+            <!-- Non-alcoholic beverages -->
+            <section class="nonalcoholic">
+                <!-- heading -->
+                <header>
+                    <h3 class="itemheading">NON-ALCOHOLIC</h3>
+                </header>
+
+                <!-- list -->
+                <ul>
+                    <li>
+                        <p class="na_img_container">
+                            <img src="images/menu/beverages/mineral_water_75x100.jpg" width="75" height="100" alt="Mineral water">
+                        </p>
+                        <p class="na_item">Mineral water</p>
+                        <p class="na_price"><strong>4.00</strong></p>
+                    </li>
+
+                    <li>
+                        <p class="na_img_container"><img src="images/menu/beverages/soft_drinks_114x100.jpg" width="114" height="100" alt="Soft drink"></p>
+                        <p class="na_item">Soft drinks</p>
+                        <p class="na_price"><strong>4.00</strong></p>
+                    </li>
+                    
+                    <li>
+                        <p class="na_img_container"><img src="images/menu/beverages/juice2_112x100.jpg" width="112" height="100" alt="Juice"></p>
+                        <p class="na_item">Juice</p>
+                        <p class="na_price"><strong>4.00</strong></p>
+                    </li>
+                    
+                    <li>
+                        <p class="na_img_container"><img src="images/menu/beverages/coffee_100x100.jpg" width="100" height="100" alt="Coffee"></p>
+                        <p class="na_item">Coffee</p>
+                        <p class="na_price"><strong>4.50</strong></p>
+                    </li>
+                    
+                    <li>
+                        <p class="na_img_container"><img src="images/menu/beverages/tea_128x100.jpg" width="128" height="100" alt="Tea"></p>
+                        <p class="na_item">Tea</p>
+                        <p class="na_price"><strong>3.50</strong></p> 
+                    </li>                   
+                </ul>
+            </section>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+
+        <!-- Contact information -->
+        <section class="contactinfo">
+            <h3>Contact</h3>
+            <p><img src="images/icons/phone_icon_48px.png" width="48" height="48" alt="Phone us"> 09 401 4019</p>
+        </section>
+
+        <!-- Opening hours -->
+        <section class="openinghours">
+            <h3>Opening Hours</h3>
+            <p>Wednesdays to Sundays</p>
+            <p>5:30pm till 9pm</p>
+        </section>
+
+        <!-- Links -->
+        <nav class="footerlinks">
+            <ul>
+                <li><a href="#" title="Our booking process">Booking process</a></li>
+                <li><a href="#" title="Buy gift vouchers">Gift vouchers</a></li>
+                <li><a href="#" title="Our privacy policy">Privacy Policy</a></li>
+            </ul>
+        </nav>
+
+        <!-- Social icons generated with https://iconfinder.com/ -->
+        <p class="socials">
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener">
+                <img class="facebook_icon" src="images/socials/facebook_icon.svg" width="112" height="112"
+                    alt="Facebook icon"  title="Our Facebook page">
+            </a>
+            <a href="https://twitter.com/" target="_blank" rel="noopener">
+                <img class="twitter_icon" src="images/socials/twitter_icon.svg" width="512" height="512"
+                    alt="Twitter icon"  title="Our Twitter page">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener">
+                <img class="instagram_icon" src="images/socials/instagram_icon.svg" width="512" height="512"
+                    alt="Instagram icon" title="Our Instagram page">
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener">
+                <img class="linkedin_icon" src="images/socials/linkedin_icon.svg" width="64" height="64"
+                    alt="LinkedIn icon" title="Our LinkedIn page">
+            </a>
+        </p>
+
+        <!-- Copyright information -->
+        <p class="copyright">&copy; 2023 The Haukai Restaurant
+        </p>        
+    </footer>
+
+    <!-- Responsive menu class setting -->
+    <script src="js/main.js"></script>
+</body>
+</html>

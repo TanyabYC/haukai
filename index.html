@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!--Page language set as English New Zealand to attract New Zealand customers
+    Useful for search engines, screen readers and voice assistants to correctly pronounce content -->
+<html lang="en-NZ">
+<head>
+    <!-- The set of characters and symbols used in the web page and required by the browser -->
+    <meta charset="UTF-8">
+
+    <!-- The browser should not scale content down. Necessary to make the website responsive on all devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Web page author -->
+    <meta name="author" content="Tanya Suzette Boshoff">
+
+    <!-- Web page description -->
+    <meta name="description" content="The Haukai Restaurant Home Page">
+
+    <!-- Define keywords required by search engines -->
+    <meta   name="keywords" 
+            content="The Haukai Restaurant, 
+                    M&amacr;ori kai, 
+                    Bay of Islands restaurant, 
+                    ideal for local residents and tourists to visit the area,
+                    M&amacr;ori and Pakeha kai food and drinks,
+                    experience Te Ao M&amacr;ori,
+                    blessing food with karakia,
+                    M&amacr;ori culture experience,
+                    book a table online">
+
+    <!-- Display a favicon image to the left of the page title in the browser tab -->
+    <!-- Generated with https://favicon.io/favicon-generator/ -->
+    <link rel="icon" type="image/x-icon" href="images/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/default.css">
+    <link rel="stylesheet" href="styles/index.css">
+    
+    <!-- Display the page title in the browser tab to describe the meaning of the page -->
+    <title>Home Page | The Haukai</title>
+</head>
+<body>
+    <!-- Page header -->
+    <header>
+        <!-- Page navigation -->
+        <nav class="topnav">
+            <a class="tophome" href="index.html" title="Our home page">
+                <picture>
+                    <source media="(max-width: 599px)" srcset="images/logo/logo_banner_600x214.png 600w" sizes="600px">
+                    <source media="(max-width: 767px)" srcset="images/logo/logo_banner_768x274.png 768w" sizes="768px">
+                    <source media="(min-width: 768px)" srcset="images/logo/logo_banner_600x214.png 600w" sizes="600px">
+                    <img src="images/logo/logo_banner_600x214.png" width="600" height="214" alt="The Haukai Restaurant logo">
+                </picture>
+            </a>
+            <img id="menubutton" src="images/menu/menu_icon.svg" onclick="showMe()" alt="View navigation">
+            <ul id="menu" class="menu">
+                <li><a class="menuhome" href="index.html" title="Our home page">Home</a></li>
+                <li><a href="menu.html" title="Our menu">Menu</a></li>
+                <li><a href="reservations.html" title="Make a reservation">Reservations</a></li>
+                <li><a href="hours.html" title="Our opening hours">Hours</a></li>
+                <li><a href="contact.html" title="Contact us">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Main page section -->
+    <main>
+        <!-- Page heading -->
+        <h1>Our Restaurant</h1>
+        
+        <!-- Restaurant image -->
+        <figure>
+            <picture class="restaurantimg_container">
+                <source media="(max-width: 599px)" srcset="images/mobile/restaurant_photo350x233.jpg 350w" sizes="350px">
+                <source media="(max-width: 767px)" srcset="images/mobile/restaurant_photo_600x400px.jpg 600w" sizes="600px">
+                <source media="(max-width: 1919px)" srcset="images/tablet/restaurant_photo_768x512px.jpg 768w" sizes="768px">
+                <source media="(min-width: 1024px)" srcset="images/desktop/restaurant_photo_1920x1280px.jpg 1920w" sizes="1920px">
+                <img class="restaurantphoto" src="images/mobile/restaurant_photo350x233.jpg" width="350" height="233" alt="The Haukai Restaurant seating area">
+            </picture>
+        </figure>
+
+        <!-- About section -->
+        <section class="about">
+            <h2>Who we are</h2>
+            <p>
+                The Haukai Restaurant is based in the Bay of Islands, near the Lord of the Rings site. 
+                We specialise in M&amacr;ori kai and welcome all locals and tourists visiting the area to come and experience Te Ao M&amacr;ori with the use of karakia for blessing food. 
+                Our dinner menu features M&amacr;ori and P&amacr;keha kai options and drinks. View <a href="menu.html" title="Menu">our menu</a> and plan your meal today!
+            </p>
+            <p>Our owners are here to make your visit as memorable as possible. Experience M&amacr;ori culture with us! Make a <a href="reservations.html" title="Reservations">reservation</a> and book your table today.</p>
+            <p>We are open in the evenings, from Wednesdays to Sundays inclusive. See <a href="hours.html" title="Opening hours">our hours</a> for more details.</p>
+            <p>Not sure where we are? Let our <a href="contact.html" title="map">map</a> guide you to our special M&amacr;ori cultured restaurant.</p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+
+        <!-- Contact information -->
+        <section class="contactinfo">
+            <h3>Contact</h3>
+            <p><img src="images/icons/phone_icon_48px.png" width="48" height="48" alt="Phone us"> 09 401 4019</p>
+        </section>
+
+        <!-- Opening hours -->
+        <section class="openinghours">
+            <h3>Opening Hours</h3>
+            <p>Wednesdays to Sundays</p>
+            <p>5:30pm till 9pm</p>
+        </section>
+
+        <!-- Links -->
+        <nav class="footerlinks">
+            <ul>
+                <li><a href="#" title="Our booking process">Booking process</a></li>
+                <li><a href="#" title="Buy gift vouchers">Gift vouchers</a></li>
+                <li><a href="#" title="Our privacy policy">Privacy Policy</a></li>
+            </ul>
+        </nav>
+
+        <!-- Social icons generated with https://iconfinder.com/ -->
+        <p class="socials">
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener">
+                <img class="facebook_icon" src="images/socials/facebook_icon.svg" width="112" height="112"
+                    alt="Facebook icon"  title="Our Facebook page">
+            </a>
+            <a href="https://twitter.com/" target="_blank" rel="noopener">
+                <img class="twitter_icon" src="images/socials/twitter_icon.svg" width="512" height="512"
+                    alt="Twitter icon"  title="Our Twitter page">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener">
+                <img class="instagram_icon" src="images/socials/instagram_icon.svg" width="512" height="512"
+                    alt="Instagram icon" title="Our Instagram page">
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener">
+                <img class="linkedin_icon" src="images/socials/linkedin_icon.svg" width="64" height="64"
+                    alt="LinkedIn icon" title="Our LinkedIn page">
+            </a>
+        </p>
+
+        <!-- Copyright information -->
+        <p class="copyright">&copy; 2023 The Haukai Restaurant
+        </p>        
+    </footer>
+
+    <!-- Responsive menu class setting -->
+    <script src="js/main.js"></script>
+</body>
+</html>
