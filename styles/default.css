@@ -156,29 +156,24 @@ footer {
         padding-bottom: 2em;
         text-align: center;
     }
-        /* Style the footer social media icons */
-        .socials a img {
-            max-width: 3.5em;
-            height: 3.5em;
-            width: 3.5em;
+        /* Space out the footer social media icons */
+        .socials a {
+            display: block;
+            float: left;
+            width: 25%;
         }
+            /* Style the footer social media icons */
+            .socials a img {
+                max-width: 3.5em;
+                height: 3.5em;
+                width: 3.5em;
+            }
 
     /* Style the footer copyright info */
     .copyright {
         margin-top: 9.5em;
         text-align: center;
     }
-
-/* For tablet screens */
-@media only screen and (min-width: 600px) {
-
-    /* Space out the footer social media icons */
-    .socials a {
-        display: block;
-        float: left;
-        width: 25%;
-    }
-}
 
 /* For desktop screens */
 @media only screen and (min-width: 768px)  {
