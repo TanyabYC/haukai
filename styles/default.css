@@ -10,6 +10,7 @@ body {
     padding-left: 50px;
     padding-right: 50px;
 	font-family: Tahoma, Verdana, sans-serif;
+    font-size: 1.5em;  /* increase font size for mobiles */
     color: #78624c;
 }
 
@@ -177,6 +178,11 @@ footer {
 
 /* For desktop screens */
 @media only screen and (min-width: 768px)  {
+
+    /* Reset font size to normal */
+    body {
+        font-size: 1em;
+    }
 
     /* Style the header for landscape view */
     header {
