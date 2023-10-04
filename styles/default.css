@@ -35,7 +35,7 @@ body {
         text-decoration: underline;
     }
     a:visited {
-        color: initial;
+        color: #154242;
     }
 
         /* Style the top navigation menu bar */
@@ -187,7 +187,7 @@ body {
 
     /* decrease font size for tablets */
     body {
-        font-size: 2em;
+        font-size: 4vw;
     }
 }
 
@@ -196,7 +196,7 @@ body {
 
     /* Reset font size to normal */
     body {
-        font-size: initial;
+        font-size: 2.25vw;
     }
 
         /* Style the header for landscape view */
