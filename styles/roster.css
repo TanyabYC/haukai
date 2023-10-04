@@ -1,8 +1,95 @@
+/* Add spacing before footer */
 main {
     padding-bottom: 5em;
 }
-
-    h2 {
+    /* Style the headings */
+    .staffdetails h2, .staffroster h2 {
         text-align: center;
         margin-bottom: 2em;
     }
+    .staffdetails h3, .staffroster h3 {
+        text-align: center;
+    }
+    ul.staffmembers h4, ul.weekroster h4 {
+        color: #154242;
+    }
+
+    /* Remove default indent for unordered lists */
+    ul {
+        padding-left: 0; 
+    }
+
+        /* Style staff details and roster instruction paragraph */
+        .staffdetails p, .staffroster p {
+            line-height: 2.5em;
+        }
+
+        /* Style staff details section */
+        ul.staffmembers {
+            margin-bottom: 5em;
+        }
+            ul.staffmembers ul, ul.weekroster ul {
+                line-height: 2em;
+            }
+            /* Display staff and shifts in a row */
+            ul.staff, ul.shift {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+                /* Style column spacing */
+                ul.staff li:first-child, ul.shift li:first-child {
+                    flex-basis: 55%;
+                }
+                ul.staff li, ul.shift li {
+                    flex-basis: 45%;
+                }
+
+    /* Add spacing before footer */
+    .staffroster {
+        margin-bottom: 1.5em;
+    }
+        /* Add spacing to first week roster */
+        ul.weekroster:first-of-type {
+            padding-bottom: 3em;
+        }
+        /* Remove default spacing of last week roster */
+        ul.weekroster:last-child {
+            margin-bottom: 0;
+        }
+
+/* For desktop screens */
+@media only screen and (min-width: 768px) {
+    
+            /* Restyle column spacing for staff details */
+            ul.staff li:first-child, ul.shift li:first-child {
+                flex-basis: 50%;
+            }
+            ul.staff li, ul.shift li {
+                flex-basis: 50%;
+            }
+
+    /* Style week rosters next to each other */
+    .roster {
+        display: flex;
+        flex-flow: row wrap;
+    }
+        /* Re-order and specify column spacing for headings and week rosters */
+        .roster h3:nth-child(1) {
+            order: 1;
+            flex-basis: 50%;
+        }
+        .roster h3:nth-child(3) {
+            order: 2;
+            flex-basis: 50%;
+        }
+        .roster ul.weekroster:nth-child(2) {
+            order: 3;
+            flex-basis: 50%;
+            margin-bottom: 0;
+        }
+        .roster ul.weekroster:nth-child(4) {
+            order: 4;
+            flex-basis: 50%;
+        }
+}

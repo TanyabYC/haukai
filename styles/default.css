@@ -105,6 +105,7 @@ body {
 
     /* Style the main body border */
     main {
+        border-top: 2px solid #154242;
         border-bottom: 2px solid #154242;
     }
 
@@ -114,7 +115,6 @@ body {
             margin: 0;
             padding-top: 40px;
             padding-bottom: 40px;
-            border-top: 2px solid #154242;
         }
 
     /* Style spacing above and below footer */
@@ -187,7 +187,7 @@ body {
 
     /* decrease font size for tablets */
     body {
-        font-size: 3.25vw;
+        font-size: 2em;
     }
 }
 
@@ -196,7 +196,7 @@ body {
 
     /* Reset font size to normal */
     body {
-        font-size: 2.25vw;
+        font-size: 1em;
     }
 
         /* Style the header for landscape view */
@@ -215,7 +215,7 @@ body {
                 .tophome {
                     display: block;
                     float: left;
-                    width: 40%;
+                    width: 30%;
 
                     /* vertically align to the center */
                     position: absolute;
@@ -236,7 +236,6 @@ body {
                 .menu {
                     display: block;
                     float: right;
-                    width: 60%;
                     padding-top: 0;
                     padding-bottom: 0;
                     border-top: none;
@@ -252,7 +251,6 @@ body {
                     .topnav ul li {
                         display: block;
                         float: left;
-
                         padding: 20px;
                     }
 
@@ -332,7 +330,12 @@ body {
 }
 
 /* For extra large desktop screens */
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {    
+
+    /* Resize the logo container */
+    .tophome {
+        width: 23%;
+    }
 
     /* Space out menu items */
     .topnav ul li {
