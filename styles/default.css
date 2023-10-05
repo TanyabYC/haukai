@@ -330,16 +330,22 @@ body {
 }
 
 /* For extra large desktop screens */
-@media only screen and (min-width: 1200px) {    
+@media only screen and (min-width: 1200px) {
 
-    /* Resize the logo container */
-    .tophome {
-        width: 23%;
+    /* Increase side spacing on screen for extra large screens */
+    body {
+        padding-left: 100px;
+        padding-right: 100px;
     }
 
-    /* Space out menu items */
-    .topnav ul li {
-        padding-left: 35px;
-        padding-right: 35px;
-    }
+        /* Resize the logo container */
+        .tophome {
+            width: 23%;
+        }
+
+        /* Space out menu items */
+        .topnav ul li {
+            padding-left: 35px;
+            padding-right: 35px;
+        }
 }
