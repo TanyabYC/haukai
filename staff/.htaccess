@@ -1,4 +1,4 @@
-AuthType basic
-AuthName "Please enter the password to log in"
+AuthType Basic
+AuthName "Staff Area"
 AuthUserFile "../htpasswd"
 Require valid-user
