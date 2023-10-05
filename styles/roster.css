@@ -28,8 +28,9 @@ main {
         ul.staffmembers {
             margin-bottom: 5em;
         }
+            /* Add vertical spacing between lists */
             ul.staffmembers ul, ul.weekroster ul {
-                line-height: 2em;
+                line-height: 2.5em;
             }
             /* Display staff and shifts in a row */
             ul.staff, ul.shift {
@@ -43,7 +44,23 @@ main {
                 }
                 ul.staff li, ul.shift li {
                     flex-basis: 45%;
+
+                    /* Vertically align containing image */
+                    display: flex;
                 }
+                /* Add a gap between multiple coloured blocks within staff roster */
+                ul.shift li {
+                    gap: 10px;
+                }
+                    /* Style coloured block images */
+                    ul.staff img, ul.shift img {
+                        max-width: 24px;
+                        width: 24px;
+                        height: auto;
+
+                        /* vertically align image */
+                        align-self: center;
+                    }
 
     /* Add spacing before footer */
     .staffroster {
