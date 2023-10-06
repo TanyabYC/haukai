@@ -38,7 +38,7 @@ main {
     }
         /* Style the staff area button */
         button.staffbutton {
-            padding: 20px;
+            padding: 1.5em;
             background-color: #daac7f;
             border-radius: 10px;
             border-top: none;
@@ -72,6 +72,6 @@ main {
 @media only screen and (min-width: 768px) {
     
     button.staffbutton a {
-        font-size: 1.75em;
+        font-size: 1.4em;
     }
 }
