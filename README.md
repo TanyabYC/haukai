@@ -5,7 +5,7 @@ The restaurant wanted a web presence to attract more customers and make staff mo
 
 The project was completed over 3 assessments whilst completing the Web Development course at Open Polytechnic NZ as part of the Web Development and Design diploma. The web application was built with HTML5, CSS and JavaScript code. The staff information page is protected with authentication by using a .htaccess and .htpasswd file on the server. Unfortunately, the GitHub server does not allow this functionality to work when deployed to GitHub Pages. Therefore, users will be able to access this page without authentication.
 
-# Improvements/Enhancements
+# Improvements / Enhancements
 Further enhancements could involve displaying content next to the restaurant photo on large screens to make better use of the space, thereby making the image smaller and allowing the image to fit above the fold of the screen.
 
 # Screenshots
